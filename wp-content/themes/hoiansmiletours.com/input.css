@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container{
+        @apply w-auto;
+    }
+}
+
+@media screen(xl) {
+    .container{
+        width: 1200px;
+    }
+}
+
+.wp-block-media-text__content{
+    @apply !p-0;
+}
+.wp-block-media-text{
+    @apply !mb-4;
+}
+.owl-prev .fa, .owl-next .fa{
+    @apply mt-3
+}
+.page-title-parallax {
+    @apply bg-repeat
+}
+.x-menu-item, .header-nav-left{
+    @apply !leading-none
+}
+.x-menu-item a{
+    @apply px-3 py-3 inline-block
+}
+#primary-menu{
+    @apply whitespace-nowrap
+}
+.current_page_item{
+    @apply bg-gray-100
+}
+.sub-menu{
+    @apply absolute bg-white hidden
+}
+.sub-menu.x-sign-flip{
+    @apply !block
+}
+/*.menu-item:hover .sub-menu{*/
+/*    @apply block*/
+/*}*/
+/*.x-nav-menu > .x-menu-item + .x-menu-item, .current-menu-item {*/
+/*    margin: 0 10px;*/
+/*}*/
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 992px) {
+    .x-nav-menu > .x-menu-item + .x-menu-item, .current-menu-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #primary-menu{
+        @apply whitespace-normal
+    }
+}
+@media screen and (max-width: 991px) {
+    .x-nav-menu li li.x-menu-item > a.x-menu-a-text {
+        font-style: normal;
+    }
+    .vc_col-sm-8{
+        width: 100%;
+    }
+    .x-nav-menu li.x-menu-item>a.x-menu-a-text{
+        display: block;
+    }
+}
+.m-post.style1 .post-item .post-content:hover .post-title{
+    @apply !hidden
+}
+.m-post.style1 .post-item .post-content .post-title{
+    @apply absolute top-[-3rem] left-0
+}
+.gallery-inner-thumb img{
+    @apply object-cover aspect-square
+}
+.pp_pic_holder{
+    @apply !fixed !top-0
+}

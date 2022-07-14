@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .container{
+        @apply w-auto;
+    }
+}
+
+@media screen(xl) {
+    .container{
+        width: 1200px;
+    }
+}
