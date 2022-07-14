@@ -1,22 +1,56 @@
-<?php
-$title = get_the_title();
-$description = rwmb_get_value('textarea_rqqb6h44gsn');
-$images = rwmb_get_value('image_advanced_bow9yqyxcm');
-$image = @Arr_first($images)['full_url'];
-?>
-<section id="page-title" class="page-title-wrap page-title-border-bottom page-title-size-lg page-title-margin"
-         style="background-color: rgba(0, 0, 0, 0.5);">
-    <div
-            data-stellar-background-image="<?= $image ?>"
-            data-stellar-background-position="center"
-            data-stellar-background-ratio="0.5"
-            class="page-title-parallax"
-            style="background-image: url('<?= $image ?>'); background-position: 50% 800.5px;"
-    ></div>
-    <div class="container">
-        <div class="page-title-inner text-center">
-            <h1 class="p-font"><?= $title ?></h1>
-            <p class="s-font"><?= $description ?></p>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/stylecss.css">
+<div class="owl-carousel owl-theme">
+    <div class="item">
+        <img src="<?php bloginfo('template_directory') ?>/assets/images/parallax-image/canh dep du lich 02.jpg" alt="">
+        <div class="cover">
+            <div class="container">
+                <div class="header-content">
+                    <div class="line"></div>
+                    <h1>Tour trong nước</h1>
+                    <h4>Khám phá những tour du lịch đa dạng và thú vị nhất tại Việt Nam.</h4>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+    <div class="item">
+        <img src="<?php bloginfo('template_directory') ?>/assets/images/parallax-image/banner2.jpg" alt="">
+        <div class="cover">
+            <div class="container">
+                <div class="header-content">
+                    <div class="line animated bounceInLeft"></div>
+                    <h1>Tour nước ngoài</h1>
+                    <h4>Khám phá những vùng đất mới cùng VERATRAVEL thật đơn giản và thú vị.</h4>
+                    <button>Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: true,
+        nav: true,
+        mouseDrag: false,
+        autoplay: true,
+        animateOut: 'slideOutUp',
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+</script>

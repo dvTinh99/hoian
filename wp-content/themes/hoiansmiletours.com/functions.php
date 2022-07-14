@@ -217,6 +217,8 @@ function tinhdoan_styles()
     wp_enqueue_style('header-style');
     wp_register_style('2583b', get_template_directory_uri() . '/assets/css/2583b.css');
     wp_enqueue_style('2583b');
+    wp_register_style('sty', get_template_directory_uri() . '/assets/css/stylecss.css');
+    wp_enqueue_style('sty');
     wp_register_style('59615', get_template_directory_uri() . '/assets/css/59615.css');
     wp_enqueue_style('59615');
     wp_register_style('output-style', get_template_directory_uri() . '/assets/css/output.css');

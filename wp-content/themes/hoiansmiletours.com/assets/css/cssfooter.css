@@ -1,0 +1,41 @@
+.footer_clearfix {
+  background-color: #036;
+  color: white;
+  font-size: 14px;
+}
+.footerContent > h5 {
+  margin: 25px 0;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.info-sgt-box {
+  padding: 15px;
+}
+.image-info-footer {
+  margin: 10px 15px;
+}
+.info-sgt-title {
+  padding: 10px;
+}
+.info-sgt-image {
+  padding: 10px;
+}
+.info-sgt-contact {
+  padding: 10px;
+}
+.footerContent > ul {
+  padding: 0;
+}
+
+.footerContent > ul > li {
+  list-style: none;
+  line-height: 21px;
+}
+.footerContent > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.footerContent > ul > li > a:hover {
+  color: gray;
+}
